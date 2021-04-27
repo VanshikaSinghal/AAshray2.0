@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AAshray | Covid Relief</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="{% static 'css/mdb.min.css' %}" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link href="{% static 'css/resources.css' %}" rel="stylesheet">
+      <!-- Alertify.js -->
+<!-- CSS -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+<!-- Default theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>
+<!-- Semantic UI theme -->
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/semantic.min.css"/>
+<!-- Bootstrap theme -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css"/>
+
+
+</head>
+
+<body>
+<div class="res">
+  <h2>{% block title %}
+    {% endblock %}</h2>
+</div>
+{% block content %}
+    {% endblock %}
+    {% comment %} 
+<footer class="page-footer font-small blue">
+
+        <!-- Social buttons -->
+        <div class="primary-color">
+            <div class="container">
+                <!--Grid row-->
+                <div class="row py-4 d-flex align-items-center">
+    
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                        <h6 class="mb-0 white-text">For making contributions to the dataset contact us via mail.</h6>
+                    </div>
+                    <!--Grid column-->
+    
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center text-md-right mb-4 mb-md-0">
+                        <!--Facebook-->
+                        <a href="mailto:aashray.helpline@gmail.com">
+                            <h6><i class="fa fa-envelope white-text mr-4"> </i>aashray.helpline@gmail.com
+                            </h6>
+                        </a>
+                       
+                    </div>
+                    <!--Grid column-->
+    
+                </div>
+                <!--Grid row-->
+            </div>
+        </div>
+        <!-- Social buttons -->
+    
+        <!--Footer Links-->
+    
+    
+                  <!--First column-->
+    
+          <!--/.Footer Links-->
+    
+          <!--Copyright-->
+          <!--Footer-->
+        </footer>
+    <footer class="page-footer unique-color-dark pt-0">
+              © 2021 Copyright:
+              <a href=" "> AAshray Foundation </a>
+          </div>
+          <!--/.Copyright-->
+    
+      </footer>
+      {% endcomment %}
+      {% comment %} </div> {% endcomment %}
+      <!--/.Footer-->
+      <!--Footer-->
+      </body>
+        <!-- JQuery -->
+        <script type="text/javascript" src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="{% static 'js/popper.min.js' %}"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="{% static 'js/mdb.min.js' %}"></script>
+        <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+        {% comment %} <script src="https://maps.google.com/maps/api/js"></script> {% endcomment %}
+        <script>
+        $('.carousel').carousel({
+            interval: 2000,
+        })
+    </script>
+    <script>
+      function resources(){
+          var res = document.getElementById("our-resources");
+          res.scrollIntoView();
+      }
+
+      function contact(){
+          var con = document.getElementById("contact");
+          con.scrollIntoView();
+      }
+
+    </script>
+    </body>
+    
+    </html>

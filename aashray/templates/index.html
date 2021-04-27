@@ -1,0 +1,288 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!--Mask-->
+<script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+  {% if messages %}
+  {% for message in messages %}
+    <script> alertify.{{message.tags}}('{{message}}');</script>
+  {% endfor %}
+  {% endif %}
+  
+<div id="intro" class="view">
+
+  <!--Mask-->
+  <div id="intro" class="view">
+
+      <div class="mask rgba-black-strong">
+
+          <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+
+              <div class="row d-flex justify-content-center text-center">
+
+                  <div class="col-md-10">
+
+                      <!-- Heading -->
+                      <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">AAshray</h2>
+
+                      <!-- Divider -->
+                      <hr class="hr-light">
+
+                      <!-- Description -->
+                      <h4 class="white-text my-4">Small efforts can make a huge difference.</h4>
+                      <button type="button" class="btn btn-outline-white" onclick="resources()" >Resources<i class="fa fa-arrow-circle-right ml-2"></i></button>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+
+  </div>
+  <!--/.Mask-->
+
+</div>
+<!--/.Mask-->
+    <!--/.Navbar-->
+  
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <!--Main layout-->
+  <main class="mt-5">
+      <div class="container" id="our-resources">
+
+          <!--Section: Best Features-->
+          <section id="best-features">
+            <!--Section: Best Features-->
+            <section id="best-features" class="text-center">
+
+                <!-- Heading -->
+                <h2 class="mb-5">Resources</h2>
+
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-8">
+
+                        <!-- Description -->
+                        <p>The resources are collected from varied platforms, verified by our team and then displayed publicly. We do not take any responsibility of the data. </p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    
+                    <div class="col-md-4 mb-1">
+                        <a href="/locations/Oxygen/" >
+                        <img style="width: 100px;" src="{% static 'img/aashray/res-oxygen.jpg' %}" alt="">
+                        <h4 class="my-4"> <b> Oxygen </b></h4>
+                    </a>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <a href="/locations/Beds/" >
+                        <img style="width: 100px;" src="{% static 'img/aashray/res-bed.jpg' %}" alt="">
+                        <h4 class="my-4"> <b> Hospital Beds </b></h4>
+                    </a>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <a href="/locations/Plasma/" >
+                        <img style="width: 100px;" src="{% static 'img/aashray/res-plasma.jpg' %}" alt="">
+                        <h4 class="my-4"> <b> Plasma </b></h4>
+                    </a>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <a href="/locations/Medicines/" >
+                        <img style="width: 100px;" src="{% static 'img/aashray/res-med.jpg' %}" alt="">
+                        <h4 class="my-4"> <b> Medicines </b></h4>
+                    </a>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <a href="/helplines/" >
+                        <img style="width: 100px;" src="{% static 'img/aashray/res-help.jpg' %}" alt="">
+                        <h4 class="my-4"> <b> Helpline </b></h4>
+                    </a>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <a href="/others/" >
+                        <img style="width: 100px;" src="{% static 'img/aashray/res-others.jpg' %}" alt="">
+                        <h4 class="my-4"> <b> Others </b></h4>
+                    </a>
+                    </div>
+                     
+
+                    
+
+                </div>
+                <!--Grid row-->
+                <!--Grid row-->
+                <br>
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-12 mb-4">               
+                <p class="grey-text">Be aware of frauds. We do not take any responsibility of the provided data.</p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">                
+                <p class="grey-text">These resources are already available publicly. Our team works to accumulate verified data.</p>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <p class="grey-text">If you want to add/ verify any resources, kindly contact us via the form below or mail.</p>
+            </div>
+            <!--Grid column-->
+
+        </div>
+              </section>
+              <!--Section: Best Features-->
+
+
+          </section>
+          <!--Section: Best Features-->
+
+          <hr class="my-5">
+
+          <!--Section: Examples-->
+          <!--Section: Examples-->
+    <section id="examples" class="text-center ">
+
+        <!-- Heading -->
+        <div class="row">
+        <div class="col-lg-6 col-md-12">
+            <img style="width:200px;" src="{% static 'img/aashray/plasma.jpg' %}" alt="">
+        </div>
+
+        <div class="col-lg-6 col-md-12"  style="vertical-align: middle; ">
+            <br><br>
+            <a href="/donor/"><h1>Fill out the form for plasma donation<i class="fa fa-arrow-circle-right ml-2 " ></i></h1></a>
+        </div>
+        </div>
+        
+        <!--Grid row-->
+
+        
+
+    </section>
+    <!--Section: Examples-->
+          <!--Section: Examples-->
+
+          
+
+          <!--Section: Gallery-->
+          <!--Section: Gallery-->
+
+  <!--Section: Gallery-->
+          <!--Section: Gallery-->
+
+          <hr class="my-5">
+
+          <!--Section: Contact-->
+          <!--Section: Contact-->
+    <section id="contact">
+
+        <!-- Heading -->
+        <h2 class=" font-weight-bold text-center">Contact us</h2>
+
+        <!--Grid row-->
+        <div class="row justify-content-center">
+
+          <!--Grid column-->
+    
+    <div class="col-lg-6 col-md-12">
+      <!-- Form contact -->
+      <form class="p-3" method="post" action="/">
+        {% csrf_token %} 
+        <div class="md-form form-sm"> <i class="fa fa-user prefix grey-text"></i>
+          <input type="text"  name="name" id="form3" required class="form-control form-control-sm">
+          <label for="form3">Your name</label>
+        </div>
+        <div class="md-form form-sm"> <i class="fa fa-envelope prefix grey-text"></i>
+          <input type="text" name="email" id="form2" required class="form-control form-control-sm" data-rule="email" data-msg="Please enter a valid email" onblur="this.style.borderColor= this.checkValidity() ? 'green' : 'red'" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+          <label for="form2">Your email</label>
+        </div>
+        <div class="md-form form-sm"> <i class="fa fa-tag prefix grey-text"></i>
+          <input type="text" name="subject" id="form32" required class="form-control form-control-sm">
+          <label for="form34">Subject</label>
+        </div>
+        <div class="md-form form-sm"> <i class="fa fa-pencil prefix grey-text"></i>
+          <textarea type="text" name="message" id="form8" required class="md-textarea form-control form-control-sm" rows="4"></textarea>
+          <label for="form8">Your message</label>
+        </div>
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-primary">Send <i class="fa fa-paper-plane-o ml-1"></i></button>
+        </div>
+      </form>
+      <!-- Form contact -->
+    </div>
+
+    <!--Grid column-->
+        
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <!-- <div class="col-lg-7 col-md-12"> -->
+
+          <!--Google map-->
+          <!-- <div id="map-container" class="z-depth-1-half map-container mb-5" style="height: 400px"></div> -->
+          <!--Grid row-->
+          <!-- <div class="row text-center"> -->
+
+              <!--Grid column-->
+              <!-- <div class="col-lg-4 col-md-12 mb-3"> -->
+
+                  <!-- <p><i class="fa fa-map fa-1x mr-2 grey-text"></i>Tunisia, Ariana, 20</p> -->
+
+              <!-- </div> -->
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <!-- <div class="col-lg-4 col-md-6 mb-3"> -->
+
+                  <!-- <p><i class="fa fa-building fa-1x mr-2 grey-text"></i>Mon - Fri, 8:00-22:00</p> -->
+
+              <!-- </div> -->
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <!-- <div class="col-lg-4 col-md-6 mb-3"> -->
+
+                  <!-- <p><i class="fa fa-phone fa-1x mr-2 grey-text"></i>+216 22222222</p> -->
+
+              <!-- </div> -->
+              <!--Grid column-->
+
+          <!-- </div> -->
+          <!--Grid row-->
+        <!-- </div> -->
+        <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+
+    </section>
+    <!--Section: Contact-->
+          <!--Section: Contact-->
+
+      </div>
+  </main>
+  <!--Main layout-->
+  <!--Main layout-->
+
+  <!--Footer-->
+  <!--Footer-->
+
+{% endblock %}
+

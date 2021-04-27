@@ -1,0 +1,124 @@
+{% extends 'resources_footer.html' %}
+{% block title %} Helpline Nos.
+    {% endblock %}
+{% block content %}
+{% load static %}
+<style>
+  .project-tab {
+    padding: 10%;
+
+    margin-top: -8%;
+}
+.project-tab #tabs{
+    background: #007b5e;
+    color: #eee;
+}
+.project-tab #tabs h6.section-title{
+    color: #eee;
+}
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #0062cc;
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+    border-color: #0062cc;
+}
+.project-tab .nav-link {
+    border: 3px solid transparent;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    color: #0062cc;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.project-tab thead{
+    background: #f3f3f3;
+    color: #0062cc;
+}
+.project-tab a{
+    text-decoration: none;
+    color: #0062cc;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+	.for-media{
+		margin-top: 40px ;
+    }
+    .project-tab {
+    padding: 5%;
+
+    margin-top: -8%;
+}
+}
+@media screen and (max-width: 575px) {
+    .for-media{
+        margin-top:40px;
+       
+    }
+    .project-tab {
+    padding: 1%;
+
+    margin-top: -8%;
+}
+}
+</style>
+<script>
+
+  function openTab(evt, e) {
+      var i, tabs;
+      var x = document.getElementsByClassName("tabs");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tabs = document.getElementsByClassName("tab_button");
+      for (i = 0; i < x.length; i++) {
+        tabs[i].className = tabs[i].className.replace(" active-tab", "");
+      }
+      document.getElementById(e).style.display = "block";
+      evt.currentTarget.className += " active-tab";
+    }
+
+</script>
+
+<section id="tabs" class="project-tab">
+  <div class="container for-media">
+      <div class="row">
+          <div class="col-md-12">
+              <nav>
+                  
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    
+                        <div id="left" class="left tabs" >
+                                                        
+                              {% for helpline in helplines %}
+                              <div class="card">
+                                       <div class="card-header" role="tab" id="first" style="background-color: white">
+                                       <h3 class="mb-0" style="color:black;">
+                                           <div style="color: black; font-size: 20px;"class="collapsed" data-toggle="collapse" data-target="#{{bed.contact}}">
+                                           {{helpline.state}} <br> <h6>Contact: {{helpline.contact}} </h6> 
+                                           </div>
+                                       </h3>
+                                   </div>
+                               </div>
+                               {% endfor %}
+                                  </div>
+                      
+                    </div>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+ 
+</section>
+
+
+
+
+{% endblock %}

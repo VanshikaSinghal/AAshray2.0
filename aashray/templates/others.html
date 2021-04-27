@@ -1,0 +1,27 @@
+{% extends 'resources_footer.html' %}
+{% block title %} Others
+{% endblock %}
+{% block content %}
+{% load static %}
+
+{% if ots %}
+{% for ot in ots %} 
+<div class="pd">
+<div class="card matter p-4 m-4">
+      <div class="row">
+        <div class="col-12 col-md-5">
+          <div class="d-flex justify-content-center">
+          <img class="pic d-flex justify-content-center i1" src="/media/{{ot.image}}" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-md-7 d-flex justify-content-center align-self-center">
+          <p align="center">{{ot.content}}<p>
+        </div>
+      </div>
+    </div>
+</div>
+{% endfor %}
+{% else %}
+<h2 class="p-4" align="center">In progress!</h2>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'resources_footer.html' %}
+{% block title %} {{val}}
+    {% endblock %}
+{% block content %}
+{% load static %}
+<div class="content">
+  <p align="center">The resources are collected from varied platforms, verified by our team and then displayed publicly. We do not take any responsibility of the data.</p>
+  </div>
+
+  {% if locs %}
+<div class="container resource">
+  <ul class="responsive-table" style="padding: 0 !important;">
+    {% for loc in locs %} 
+    <a href="/resources/{{val}}/{{loc.city}}"><li class="table-row">
+      <div class="col">{{loc.city}}</div>
+    </li></a>
+    {% endfor %}
+  </ul>
+</div>
+{% else %}
+<h2 class="p-4" align="center">Sorry we don't have any resource for {{val}}.</h2>
+{% endif %}
+{% endblock %}
